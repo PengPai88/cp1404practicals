@@ -1,0 +1,22 @@
+#:kivy 1.11.1
+<WimbledonApp>:
+    BoxLayout:
+        orientation: "vertical"
+        spacing: 10
+        padding: 10
+
+        Label:
+            text: "Wimbledon Champions"
+            font_size: 24
+            size_hint_y: 0.1
+
+        ScrollView:
+            BoxLayout:
+                id: names_box
+                orientation: "vertical"
+                size_hint_y: None
+                height: self.minimum_height
+
+        Label:
+            text: "I did this :)"
+            size_hint_y: 0.1
